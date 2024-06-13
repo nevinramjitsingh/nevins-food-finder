@@ -1,0 +1,102 @@
+form div {
+    margin-bottom: 10px;
+  }
+  
+  form input[type="text"],
+  form input[type="number"],
+  form input[type="range"] {
+    width: calc(100% - 20px); /* Ensure all input fields have the same width */
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .location-input-container {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Ensure container is full width */
+  }
+  
+  .location-input-container input {
+    width: 100%; /* Ensure input field is full width */
+    padding-right: 40px; /* Adjust padding to make space for the icon */
+  }
+
+  button {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .location-button {
+    position: absolute;
+    right: 15px; /* Adjust the position to ensure it's on the right edge */
+    top: 50%;
+    transform: translateY(-50%);
+    background: white;
+    border: none;
+    cursor: pointer;
+    padding: 0; /* Remove padding */
+  }
+  
+  .location-button img {
+    width: 24px;
+    height: 24px;
+    pointer-events: none; /* Ensure the icon is not interactable */
+  }
+  
+  .location-button:focus {
+    outline: none; /* Remove outline on focus */
+  }
+  
+  .location-button img {
+    user-select: none; /* Prevent text selection */
+    -webkit-user-drag: none; /* Prevent image dragging */
+  }
+
+  .location-button:hover {
+    background: white;
+  }
+  
+  .radius-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: #ddd;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+  
+  .radius-slider:hover {
+    opacity: 1;
+  }
+  
+  .radius-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 24px;
+    height: 24px;
+    background: #007aff;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .radius-slider::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    background: #000000;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  
