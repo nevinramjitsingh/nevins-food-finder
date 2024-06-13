@@ -1,70 +1,74 @@
-# Getting Started with Create React App
+Nevin's Food Finder:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Nevin's Food Finder is a web application that helps users discover restaurants based on their food preferences and location. The application integrates the Yelp API for restaurant details and the HERE API for maps and routing, providing a seamless user experience. Users can manually enter their location or use real-time geolocation to find nearby restaurants.
 
-## Available Scripts
+Features:
+Restaurant Search: Search for restaurants by food type and location.
+Geolocation: Use current location to find nearby restaurants.
+Radius Filter: Adjust the search radius to find restaurants within a specified distance.
+Map Integration: Display restaurant locations on a map with routing from the user's location.
+Modern Design: Sleek, minimalist design with a responsive UI for optimal display on all devices.
+Star Ratings: Display restaurant ratings with star icons.
 
-In the project directory, you can run:
+Technologies Used
+Frontend: React
+Backend: Node.js, Express
+APIs: Yelp API, HERE API
+Styling: CSS
 
-### `npm start`
+Getting Started:
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Prerequisites:
+Make sure you have the following installed on your local machine:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Node.js
+npm (Node Package Manager)
+Git
 
-### `npm test`
+Installation:
+Clone the repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+git clone https://github.com/your-username/nevins-food-finder.git
+cd nevins-food-finder
 
-### `npm run build`
+Install dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Create a .env file in the root directory and add your API keys:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+REACT_APP_YELP_API_KEY=your_yelp_api_key
+REACT_APP_HERE_API_KEY=your_here_api_key
 
-### `npm run eject`
+Start the development server:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+npm start
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Run the Express server:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+node proxy.js
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Usage:
+Search for restaurants: Enter a type of food and location, then click "Find Restaurant."
+Use current location: Click the location icon button to use your current location.
+View restaurant details: View restaurant details, ratings, and location on the map.
 
-## Learn More
+API Integration:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Yelp API
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The Yelp API is used to search for restaurants and retrieve restaurant details.
 
-### Code Splitting
+Endpoint: https://api.yelp.com/v3/businesses/search
+Parameters: term, location, radius
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+HERE API
 
-### Analyzing the Bundle Size
+The HERE API is used for geocoding, reverse geocoding, and displaying maps with routes.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Endpoint: https://router.hereapi.com/v8/routes
+Parameters: transportMode, origin, destination, return
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+License:
+This project is licensed under the MIT License - see the LICENSE file for details.
