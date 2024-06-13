@@ -1,22 +1,31 @@
-Nevin's Food Finder:
+# Nevin's Food Finder
 
-Nevin's Food Finder is a web application that helps users discover restaurants based on their food preferences and location. The application integrates the Yelp API for restaurant details and the HERE API for maps and routing, providing a seamless user experience. Users can manually enter their location or use real-time geolocation to find nearby restaurants.
+Nevin's Food Finder is a web application that helps users discover restaurants based on their food preferences and location. The app integrates the Yelp API for restaurant details and the HERE API for maps and routing. Users can either manually enter their location or use real-time geolocation.
 
-Features:
-Restaurant Search: Search for restaurants by food type and location.
-Geolocation: Use current location to find nearby restaurants.
-Radius Filter: Adjust the search radius to find restaurants within a specified distance.
-Map Integration: Display restaurant locations on a map with routing from the user's location.
-Modern Design: Sleek, minimalist design with a responsive UI for optimal display on all devices.
-Star Ratings: Display restaurant ratings with star icons.
+## Features
 
-Technologies Used
-Frontend: React
-Backend: Node.js, Express
-APIs: Yelp API, HERE API
-Styling: CSS
+- Search for restaurants by type of food and location
+- Display restaurant details including name, address, rating, and reviews
+- Show restaurant location on a map
+- Provide routing directions from the user's location to the restaurant
+- Modern, minimalist design with a responsive UI
 
-Getting Started:
+## Technologies Used
+
+- **Frontend:** React, JavaScript, HTML, CSS
+- **Backend:** Node.js, Express
+- **APIs:** Yelp API, HERE API
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed on your machine
+- A HERE API key
+- A Yelp API key
+
+### Installation
+
 Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
 
 Prerequisites:
